@@ -1,0 +1,32 @@
+//navbar
+nav.navbar.navbar-expand-lg.navbar-light.sticky-top.border(style='background-color:white')
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto.h5
+      li.nav-item.active
+        a.nav-link.text-dark(href='http://localhost:3000/')
+          i.fa.fa-home
+          |  Home 
+          span.sr-only (current)
+      li.nav-item
+        a.nav-link.text-dark(href='http://localhost:3000/nosotros.html') About Us
+      li.nav-item.dropdown
+        a#navbarDropdown.nav-link.dropdown-toggle.text-dark(href='http://localhost:3000/servicios.html', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+          | Products
+        .dropdown-menu.wow.fadeInDown(aria-labelledby='navbarDropdown',data-wow-duration='1s')
+          a.dropdown-item(href='#') Product 1
+          a.dropdown-item(href='#') Product 2
+          .dropdown-divider
+          a.dropdown-item(href='#') Something else here
+      li.nav-item
+        a.nav-link.text-dark(href='http://localhost:3000/galeria.html') Gallery
+      li.nav-item
+        a.nav-link.text-dark(href='http://localhost:3000/blog.html') Blog
+      li.nav-item
+        a.nav-link.text-dark(href='http://localhost:3000/contacto.html') Contacto
+    ul.navbar-nav.ml-auto.h5
+      li.nav-item
+        a.nav-link.text-dark(href='http://localhost:3000/login.html')
+          i.fa.fa-cart-arrow-down  Car
+//.navbar
