@@ -1,0 +1,21 @@
+//Login
+section#login-section
+	.container
+		.row
+			#login-contenedor.col-md-12.d-flex.flex-column.justify-content-center.align-items-center
+				#form-login.p-5.border-right.hvr-float-shadow
+					h3.text-center.text-primary Login
+					hr
+					form
+						.fom-group
+							label.text-muted Name
+							input.form-control(type="text",placeholder="name")
+						.form-group
+							label.text-muted Password
+							input.form-control(type="password",placeholder="Password")
+						.form-check
+							input#exampleCheck1.form-check-input(type='checkbox')
+							label.form-check-label.pb-2(for='exampleCheck1') Remember me  
+						button.btn.btn-primary(type="submit") Login
+
+
