@@ -1,0 +1,16 @@
+extends ./layout/layout.jade
+
+block title
+	title pagina contacto
+
+block content
+	h2.text-center.my-5 Contact Us
+	.container
+		.row.my-5
+			.col-md-5
+				include parts/contact_us.jade
+			.col-md-7
+				include parts/form_contact.jade
+
+	
+	include parts/map.jade
