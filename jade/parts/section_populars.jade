@@ -1,0 +1,16 @@
+//Populars
+h3.text-center.my-5 Populars
+.container.mb-5
+	.row
+		- for(var x = 1; x <=4 ; x++)
+			.col-md-3
+				.card.border-0.text-center
+						img.card-img-top(src="http://via.placeholder.com/400x300")
+						.card-body
+							.card-title= 'Product' + x
+							.card-text= '$' + (x+1) + (x+1) + x
+							a.btn.btn-primary.text-white.mt-2 Add to Car
+			
+				
+					
+		

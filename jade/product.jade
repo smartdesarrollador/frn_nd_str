@@ -1,0 +1,27 @@
+extends ./layout/layout_without_slider.jade
+
+block title
+	title index
+
+block content
+	section#productos.my-5
+		.container
+			.row
+				.col-md-3
+					include parts/sidebar/sidebar.jade
+				.col-md-9
+					.row
+						- for(var x = 1; x <=12 ; x++)
+							.col-md-3
+								.card.border-0.text-center
+										img.card-img-top(src="http://via.placeholder.com/400x300")
+										.card-body
+											.card-title= 'Product' + x
+											.card-text= '$' + (x+1) + (x+1) + x
+											a.btn.btn-primary.text-white.mt-2 Add to Car
+
+	
+
+				
+				
+			
