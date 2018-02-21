@@ -1,0 +1,17 @@
+extends ./layout/layout.jade
+
+block title
+	title index
+
+block content
+	.container
+		.row.my-5
+			.col-md-12
+				include parts/cart/table_cart.jade
+		.row.mb-5
+			.col-md-5
+			.col-md-7
+				include parts/cart/total_cart.jade
+	
+	
+			

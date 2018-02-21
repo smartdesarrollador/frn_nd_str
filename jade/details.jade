@@ -1,0 +1,24 @@
+extends ./layout/layout.jade
+
+block title
+	title index
+
+block content
+	h3.text-center.my-5 Details
+	.container
+		.row.mb-5
+			.col-md-5
+				include parts/details/slider_product.jade
+			.col-md-7
+				include parts/details/details_product.jade
+		.row.my-5
+			.col-md-12
+				include parts/details/description_product.jade
+				include parts/details/related_products.jade
+
+
+	
+
+				
+				
+			
